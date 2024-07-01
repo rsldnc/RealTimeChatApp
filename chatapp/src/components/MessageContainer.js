@@ -1,5 +1,5 @@
 const MessageContainer = ({ messages }) => {
-    if (!messages) return null; // Eğer messages undefined veya null ise, hiçbir şey render etmeyin
+    if (!messages) return null;
 
     return (
         <div>
