@@ -5,3 +5,26 @@
 /ChatService/obj
 /ChatService/.vs/ChatService
 /ChatService/bin/Debug/net8.0
+
+
+# dependencies
+/chatapp/node_modules
+/chatapp/.pnp
+/chatapp/.pnp.js
+
+# testing
+/chatapp/coverage
+
+# production
+/chatapp/build
+
+# misc
+/chatapp/.DS_Store
+/chatapp/.env.local
+/chatapp/.env.development.local
+/chatapp/.env.test.local
+/chatapp/.env.production.local
+
+/chatapp/npm-debug.log*
+/chatapp/yarn-debug.log*
+/chatapp/yarn-error.log*
