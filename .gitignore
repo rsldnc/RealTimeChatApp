@@ -28,3 +28,47 @@
 /chatapp/npm-debug.log*
 /chatapp/yarn-debug.log*
 /chatapp/yarn-error.log*
+ChatService/.vs/ProjectEvaluation/chatservice.metadata.v8.bin
+ChatService/.vs/ProjectEvaluation/chatservice.projects.v8.bin
+ChatService/.vs/ProjectEvaluation/chatservice.strings.v8.bin
+
+
+/chatappv2/dist
+/chatappv2/tmp
+/chatappv2/out-tsc
+/chatappv2/bazel-out
+
+# Node
+/chatappv2/node_modules
+/chatappv2/npm-debug.log
+/chatappv2/yarn-error.log
+
+# IDEs and editors
+/chatappv2/.idea/
+/chatappv2/.project
+/chatappv2/.classpath
+/chatappv2/.c9/
+.chatappv2/*.launch
+/chatappv2/.settings/
+/chatappv2/*.sublime-workspace
+
+# Visual Studio Code
+/chatappv2/.vscode/*
+!/chatappv2/.vscode/settings.json
+/chatappv2/.vscode/tasks.json
+/chatappv2/.vscode/launch.json
+/chatappv2/.vscode/extensions.json
+/chatappv2/.history/*
+
+# Miscellaneous
+/chatappv2/.angular/cache
+/chatappv2/.sass-cache/
+/chatappv2/connect.lock
+/chatappv2/coverage
+/chatappv2/libpeerconnection.log
+/chatappv2/testem.log
+/chatappv2/typings
+
+# System files
+/chatappv2/.DS_Store
+/chatappv2/Thumbs.db
