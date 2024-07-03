@@ -7,6 +7,11 @@
 /ChatService/bin/Debug/net8.0
 
 
+/ChatServiceV2/obj
+/ChatServiceV2/.vs/ChatService
+/ChatServiceV2/bin/Debug/net8.0
+/ChatServiceV2/.vs/ChatServiceV2/v17
+
 # dependencies
 /chatapp/node_modules
 /chatapp/.pnp
@@ -72,3 +77,5 @@ ChatService/.vs/ProjectEvaluation/chatservice.strings.v8.bin
 # System files
 /chatappv2/.DS_Store
 /chatappv2/Thumbs.db
+
+/ChatServiceV2/.vs/ChatServiceV2/FileContentIndex
