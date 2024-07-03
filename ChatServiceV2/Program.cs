@@ -1,9 +1,13 @@
 using ChatServiceV2.Context;
+using ChatServiceV2.Hubs;
+using DefaultCorsPolicyNugetPackage;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDefaultCors();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("SqlServer")));
@@ -12,6 +16,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -22,10 +28,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseStaticFiles();
+
 app.UseHttpsRedirection();
+
+app.UseCors();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHub<ChatHub>("/chat-hub");
 
 app.Run();
