@@ -13,7 +13,7 @@ function App() {
   const joinChatRoom = async (username, chatroom) => {
     try {
       const connection = new HubConnectionBuilder()
-                          .withUrl("http://localhost:5212/chat")
+                          .withUrl("http://localhost:5212/Chat")
                           .configureLogging(LogLevel.Information)
                           .build();
 
